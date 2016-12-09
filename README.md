@@ -20,7 +20,7 @@ This is a WeApp project template using TypeScript where `async/await` can be use
     * [WeApp Snippets](https://marketplace.visualstudio.com/items?itemName=emeryao.we-app-vscode)
     * [TSLint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 
-* All files are built into the **[dist](./dist)** folder so it is the **`dist`** folder which will be referenced in Wexin dev tool for a WeApp instead of the ~~project folder~~ or the folder of ~~`src`~~
+* All files are built into a **dist** folder so it is the **`dist`** folder which will be referenced in Wexin dev tool for a WeApp instead of the ~~project folder~~ or the folder of ~~`src`~~
 
 ## async/await
 * `async/await` can be used freely when targetting ES5 with the [ES6-promise polyfill](https://github.com/stefanpenner/es6-promise) imported
