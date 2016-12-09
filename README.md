@@ -11,10 +11,11 @@ This is a WeApp project template using TypeScript where `async/await` can be use
 |Node Module|Command|
 |-----|-----|
 |TypeScript>2.1.4|`npm install -g typescript`|
+|Typings|`npm install -g typings`|
 |TSLint|`npm install -g tslint`|
 |Gulp|`npm install -g gulp`|  
 
-* After installing those modules run the command of `npm install` to install dev dependencies then the project can be built by the command `gulp` which runs the default task in [gulpfile.js](./gulpfile.js)
+* After installing those modules run the command of `npm install` and `typings install` to install dev dependencies and typings dependencies then the project can be built by the command `gulp` which runs the default task in [gulpfile.js](./gulpfile.js)
 
 * These VS Code extensions is recommeded to be installed:
     * [WeApp Snippets](https://marketplace.visualstudio.com/items?itemName=emeryao.we-app-vscode)
