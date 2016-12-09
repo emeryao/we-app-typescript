@@ -3,11 +3,12 @@
         "pages/index/index"
     ],
     "window": {
-        "backgroundTextStyle": "dark",        
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#E909F9",
         "navigationBarTitleText": "WeApp TypeScript",
         "navigationBarTextStyle": "white",
         "enablePullDownRefresh": false,
-        "backgroundColor": "#fff"
+        "backgroundColor": "#FFF"
     },
     "debug": false
 }
