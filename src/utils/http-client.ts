@@ -1,5 +1,3 @@
-// var Promise = require('./es6-promise.min').Promise;
-
 export class HttpClient {
     public static async getAsync<T>(url: string): Promise<T | null> {
         if (!url) {

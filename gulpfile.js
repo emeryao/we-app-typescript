@@ -35,10 +35,4 @@ gulp.task('move', () => {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('addPromise', () => {
-    gulp.src('dist/**/*.js')
-        .pipe(replace('// var Promise', 'var Promise'))
-        .pipe(gulp.dest('dist'));
-});
-
-gulp.task('default', ['build', 'move', 'addPromise']);
+gulp.task('default', ['build', 'move']);
