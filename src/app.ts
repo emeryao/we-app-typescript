@@ -1,5 +1,3 @@
-// var Promise = require('./utils/es6-promise.min').Promise;
-
 App({
     onLaunch: async () => {
         console.log('on launch', new Date());

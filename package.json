@@ -1,15 +1,14 @@
 {
-  "name": "dache-weapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp-replace": "^0.5.4"
-  }
+    "name": "we-app-typescript",
+    "version": "1.0.0",
+    "description": "A WeApp project template in TypeScript using VS Code",
+    "keywords": [],
+    "author": "Emeryao",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "tslint": "^5.5.0",
+        "typed-we-app": "^1.4.0-update.1",
+        "typescript": "^2.4.1"
+    }
 }

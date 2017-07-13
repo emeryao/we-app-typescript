@@ -1,17 +1,16 @@
 export class HttpClient {
-    public static async getAsync<T>(url: string): Promise<T | null> {
-        if (!url) {
-            return null;
-        }
-
-        return new Promise<T | null>((resolve, reject) => {
+    public static async getAsync<T = boolean>(url: string): Promise<T> {
+        return new Promise<T>((resolve, reject) => {
+            if (!url) {
+                resolve(null);
+            }
             let param: WeApp.RequestParam = {
                 url: url,
                 header: {
                     'Content-Type': 'application/json',
                 },
                 method: 'GET',
-                success: (res) => {
+                success: res => {
                     if (res) {
                         if (res.statusCode == 200) {
                             resolve(res.data as T);
@@ -26,12 +25,11 @@ export class HttpClient {
         });
     }
 
-    public static async postAsync<T>(url: string, body: string): Promise<T | null> {
-        if (!url) {
-            return null;
-        }
-
-        return new Promise<T | null>((resolve, reject) => {
+    public static async postAsync<T = boolean>(url: string, body: string): Promise<T> {
+        return new Promise<T>((resolve, reject) => {
+            if (!url) {
+                resolve(null);
+            }
             let param: WeApp.RequestParam = {
                 url: url,
                 header: {
@@ -39,7 +37,7 @@ export class HttpClient {
                 },
                 data: body,
                 method: 'POST',
-                success: (res) => {
+                success: res => {
                     if (res) {
                         if (res.statusCode == 200) {
                             resolve(res.data as T);

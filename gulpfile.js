@@ -1,7 +1,6 @@
 const fs = require('fs');
 const gulp = require('gulp');
 const execSync = require('child_process').execSync;
-const replace = require('gulp-replace');
 
 gulp.task('clean', () => {
     let res = fs.existsSync('dist')

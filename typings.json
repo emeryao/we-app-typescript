@@ -1,7 +1,0 @@
-{
-  "name": "dache-weapp",
-  "dependencies": {},
-  "globalDependencies": {
-    "we-app": "github:Emeryao/typed-we-app"
-  }
-}
